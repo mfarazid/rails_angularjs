@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myapplication">
+ <head>
+   <title>RailsAngularjs</title>
+   <%= stylesheet_link_tag 'application', media: 'all'%>
+   <%= javascript_include_tag 'application'%>
+   <%= csrf_meta_tags %>
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ </head>
+ <body>
+   <div class="container" ng-view>
+     <%= yield %>
+   </div>
+ </body>
+</html>
